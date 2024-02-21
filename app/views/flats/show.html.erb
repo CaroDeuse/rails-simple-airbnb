@@ -1,0 +1,32 @@
+<div class="banner">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="card">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="card">
+        <h3>A little more about this place...</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <h4>Book this place!</h4>
+        <button class="btn btn-success">Book</button>
+      </div>
+      <div class="card">
+        <h4>Details</h4>
+        <p><%= @flat.number_of_guests %> people   <%= @flat.price_per_night %>€</p>
+      </div>
+      <div class="card">
+      </div>
+    </div>
+
+
+  </div>
+</div>

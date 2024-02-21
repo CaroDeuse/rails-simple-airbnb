@@ -1,15 +1,87 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+h1, h2, h3, h4, p, i {
+  color: rgb(50, 50, 50);
+}
+
+.title {
+  margin-top: 40px;
+}
+
+.navvbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(233, 233, 233);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.my-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 100px;
+  border: solid 1px rgb(95, 95, 95);
+}
+
+.my-btn.prim {
+  background-color: rgb(95, 95, 95);
+
+  color: white;
+  font-weight: 700;
+
+}
+
+.my-btn.sec {
+  color: rgb(95, 95, 95);
+  font-weight: 700;
+}
+
+.my-card {
+  border: solid 1px rgb(233, 233, 233);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.general-info {
+  padding: 20px;
+}
+
+.guest-price {
+  display: flex;
+  align-items: center;
+}
+
+.guest-price i {
+  margin-right: 5px;
+}
+
+.guest-price p {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.action-buttons {
+  padding: 10px;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.action-buttons a {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(50, 50, 50);
+}
